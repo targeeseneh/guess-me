@@ -25,10 +25,10 @@ const maxAttempts = 10; // Set the maximum number of attempts
             document.getElementById('submit').disabled = true;
             guessInput.disabled = true; // Disable the input field
         } else if (guess < randomNumber) {
-            document.getElementById('message').textContent = 'Oops too high.';
+            document.getElementById('message').textContent = 'Try a higher number.';
             document.getElementById('message').style.color = 'red';
         } else {
-            document.getElementById('message').textContent = 'Oops too low.';
+            document.getElementById('message').textContent = 'Try a lower number.';
             document.getElementById('message').style.color = 'red';
         }
 
@@ -88,3 +88,5 @@ const maxAttempts = 10; // Set the maximum number of attempts
         document.getElementById('attempts').textContent = attempts;
     }
 
+
+     
